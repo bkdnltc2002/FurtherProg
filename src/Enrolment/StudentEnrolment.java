@@ -3,11 +3,11 @@ package Enrolment;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class StudentEnrolment {
+public abstract class StudentEnrolment implements StudentEnrolmentManager {
     private Student student;
     private Course course;
     private String semester;
-    private ArrayList<StudentEnrolment> enrolments =new ArrayList<StudentEnrolment>();
+    private ArrayList<StudentEnrolment> enrolment_list =new ArrayList<StudentEnrolment>();
     private ArrayList<Student> student_list =new ArrayList<Student>();
     private ArrayList<Course> course_list =new ArrayList<Course>();
     private ArrayList<String> sem_list =new ArrayList<String>();
@@ -39,10 +39,5 @@ public class StudentEnrolment {
         return semester;
     }
 
-    public static void main(String[] args) {
-        Student stu=new Student();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your student id");
 
-    }
 }
