@@ -3,16 +3,15 @@ package Enrolment;
 import java.util.ArrayList;
 
 public interface StudentEnrolmentManager {
-    ArrayList<StudentEnrolment> studentenrolment =new ArrayList<StudentEnrolment>();
 
-    public void add();
+    void add();
 
-    public void update();
+    void update();
 
-    public void delete();
+    void delete();
 
-    public void getOne();
+    void getOne();
 
-    public void getAll();
+    void getAll();
 
 }
